@@ -1,0 +1,33 @@
+<div class="container">
+
+    <h3 class="text-center">Our Staff Members</h3>
+    
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th >Email</th>
+            <th >Phone</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let staff of staffs">
+            <td> {{ staff.staff_id }}</td>
+            <td> {{ staff.staff_name }}</td>
+            <td> {{ staff.staff_email }} </td>
+            <td> {{ staff.staff_phone }} </td>
+            <td>
+              <button (click)="updateStaff(staff.staff_id)" class="btn btn-defult" style="background-color: rgb(135, 205, 240);"><span class="glyphicon glyphicon-edit"></span></button>
+              <button (click)="deleteStaff(staff.staff_id)" class="btn btn-defult" style="margin-left: 10px; background-color: rgb(250, 137, 142);"><span class="glyphicon glyphicon-trash"></span></button>
+              <button (click)="viewStaff(staff.staff_id)" class="btn btn-defult" style="margin-left: 10px;background-color: rgb(255, 250, 156);"><span class="glyphicon glyphicon-eye-open"></span></button>
+
+            </td>
+          </tr>
+         
+        </tbody>
+      </table>
+    
+      </div>
+      

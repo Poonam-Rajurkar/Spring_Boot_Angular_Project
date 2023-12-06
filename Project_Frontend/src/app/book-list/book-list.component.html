@@ -1,0 +1,36 @@
+<div class="container" >
+
+    <h3 class="text-center">List of Books</h3>
+    
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>#</th>
+            <th>Book Title</th>
+            <th >Name of Author </th>
+            <th>Price</th>
+            <th>Available Books</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of books">
+            <td> {{ book.book_id }}</td>
+            <td> {{ book.book_title}}</td>
+            <td> {{ book.book_author }} </td>
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee mb-1" viewBox="0 0 16 16">
+              <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+            </svg> {{ book.book_price }} </td>
+            <td> {{ book.book_borrowed}} </td>
+            <td>
+              <button (click)="updateBook(book.book_id)" class="btn btn-default" style="background-color: rgb(135, 205, 240);"><span class="glyphicon glyphicon-edit"></span></button>
+              <button (click)="deleteBook(book.book_id)" class="btn btn-default" style="margin-left: 10px; background-color: rgb(250, 137, 142);"><span class="glyphicon glyphicon-trash"></span></button>
+              <button (click)="viewBook(book.book_id)" class="btn btn-default" style="margin-left: 10px; background-color: rgb(255, 250, 156);"><span class="glyphicon glyphicon-eye-open"></span></button>
+            </td>
+          </tr>
+         
+        </tbody>
+      </table>
+    
+      </div>
+      

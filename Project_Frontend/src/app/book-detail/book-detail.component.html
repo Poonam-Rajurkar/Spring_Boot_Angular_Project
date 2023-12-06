@@ -1,0 +1,32 @@
+<h3 class="text-center" style="margin-top: -3%;">Book Details</h3>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+   
+    <div class="col-3"></div>
+   
+    <div class="col-6">
+      <div class="card h-100">
+        <img src="https://img.freepik.com/premium-photo/opened-book-with-flying-pages-butterflies-dark-backgroundgenerative-ai_391052-12859.jpg" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+        <div class="card-body">
+          <p style="padding-left: 95%;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+              </svg>
+          </p>
+          <h4 class="card-title">{{ book.book_title }} </h4>
+          <p class="card-text">
+            By {{ book.book_author}}
+          </p>
+
+          <p><b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee mb-1" viewBox="0 0 16 16">
+            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z"/>
+          </svg> {{ book.book_price }} </b></p>
+
+          <p style="padding-left: 68%;">Available Books
+            <span class="badge bg-primary rounded-pill">{{ book.book_borrowed }}</span>
+          </p>
+        </div> 
+      </div>
+    </div>
+    
+    <div class="col-3"></div>
+  </div>

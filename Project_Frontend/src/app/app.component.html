@@ -1,0 +1,71 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    width="55"
+    alt="Angular Logo"
+    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a7af54b9-3a91-433b-99e7-5274c8355a63/de5mmbu-2471ba83-d537-4754-bd90-acfd4d861b15.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E3YWY1NGI5LTNhOTEtNDMzYi05OWU3LTUyNzRjODM1NWE2M1wvZGU1bW1idS0yNDcxYmE4My1kNTM3LTQ3NTQtYmQ5MC1hY2ZkNGQ4NjFiMTUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cKYJtbZdffgjGyjrAC1eUfqk4iRBMJDKBmLIgTeZ8Xw"/>
+    
+    <nav class="navbar navbar-expand-sm " style="margin-top: 1.5%;">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a routerLink="home-page" routerLinkActive="active" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Books</a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="create-book" class="dropdown-item" style="color:black; " >Add Books</a></li>
+            <li><a routerLink="books" class="dropdown-item" style="color:black;">View Books</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Readers</a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="create-reader" class="dropdown-item" style="color:black; " >Add Readers</a></li>
+            <li><a routerLink="readers" class="dropdown-item" style="color:black;">View Readers</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Staff</a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="create-staff" class="dropdown-item" style="color:black; " >Add Staff Members</a></li>
+            <li><a routerLink="staffs" class="dropdown-item" style="color:black;">View Staff Members</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="create-category" class="dropdown-item" style="color:black; " >Add Book Category</a></li>
+            <li><a routerLink="categories" class="dropdown-item" style="color:black;">View Book Category</a></li>
+          </ul>
+        </li>
+
+        <!-- <li class="nav-item">
+          <a routerLink="buy-book" class="nav-link">Buy Book</a>
+        </li> -->
+        
+      </ul>
+    </nav>
+
+    <div class="spacer"></div>
+    <a routerLink="admin-page" style="margin-right: 3% ;" class="nav-link">Login</a>
+  
+</div>
+
+
+
+<div class="content" role="main">
+
+  <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
+    <title>Gray Clouds Background</title>
+    <path id="Path_39" data-name="Path 39" d="M2379.709,863.793c10-93-77-171-168-149-52-114-225-105-264,15-75,3-140,59-152,133-30,2.83-66.725,9.829-93.5,26.25-26.771-16.421-63.5-23.42-93.5-26.25-12-74-77-130-152-133-39-120-212-129-264-15-54.084-13.075-106.753,9.173-138.488,48.9-31.734-39.726-84.4-61.974-138.487-48.9-52-114-225-105-264,15a162.027,162.027,0,0,0-103.147,43.044c-30.633-45.365-87.1-72.091-145.206-58.044-52-114-225-105-264,15-75,3-140,59-152,133-53,5-127,23-130,83-2,42,35,72,70,86,49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33,61.112,8.015,113.854-5.72,150.492-29.764a165.62,165.62,0,0,0,110.861-3.236c47,94,178,113,251,33,31.385,4.116,60.563,2.495,86.487-3.311,25.924,5.806,55.1,7.427,86.488,3.311,73,80,204,61,251-33a165.625,165.625,0,0,0,120,0c51,13,108,15,157-5a147.188,147.188,0,0,0,33.5-18.694,147.217,147.217,0,0,0,33.5,18.694c49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33C2446.709,1093.793,2554.709,922.793,2379.709,863.793Z" transform="translate(142.69 -634.312)" fill="#eee"/>
+  </svg>
+
+</div>
+
+ 
+
+<router-outlet></router-outlet>
